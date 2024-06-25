@@ -15,7 +15,8 @@ public class Tasklist {
     public void removeTask(int index) {
         if (index >= 0 && index < tasks.size()) {
             tasks.remove(index);
-        } else {
+        }  
+        else {
             System.out.println("Invalid task index.");
         }
     }
@@ -23,7 +24,8 @@ public class Tasklist {
     public void markTaskAsCompleted(int index) {
         if (index >= 0 && index < tasks.size()) {
             tasks.get(index).markAsCompleted();
-        } else {
+        }
+        else {
             System.out.println("Invalid task index.");
         }
     }
