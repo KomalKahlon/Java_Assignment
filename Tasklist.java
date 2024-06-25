@@ -41,9 +41,6 @@ public class Tasklist {
         System.out.println("Total tasks: " + totalTasks);
         System.out.println("Completed tasks: " + completedTasks);
         System.out.println("Completion percentage: " + (totalTasks == 0 ? 0 : (completedTasks * 100 / totalTasks)) + "%");
-    }
-
-    public void sortTasksByCompletionStatus() {
-        tasks.sort((t1, t2) -> Boolean.compare(t1.isCompleted(), t2.isCompleted()));
+   
     }
 }
