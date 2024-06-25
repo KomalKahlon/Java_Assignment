@@ -13,8 +13,7 @@ import java.util.Scanner;
                 System.out.println("3. Mark Task as Completed");
                 System.out.println("4. View Tasks");
                 System.out.println("5. View Task Statistics");
-                System.out.println("6. Sort Tasks by Completion Status");
-                System.out.println("7. Exit");
+                System.out.println("6. Exit");
                 System.out.print("Choose an option: ");
                 int choice = scanner.nextInt();
                 scanner.nextLine();  // Consume newline
@@ -42,13 +41,8 @@ import java.util.Scanner;
                         taskList.viewStatistics();
                         break;
                     case 6:
-                        taskList.sortTasksByCompletionStatus();
-                        break;
-                    case 7:
                         exit = true;
-                        break;
-                    default:
-                        System.out.println("Invalid choice. Please try again.");
+                       
                 }
             }
 
